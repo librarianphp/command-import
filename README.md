@@ -1,7 +1,7 @@
-# command-help
+# command-import
 
-Librarian's built-in help command.
+Librarian's built-in import command.
 
 ```shell
-./librarian help
+./librarian import dev
 ```
