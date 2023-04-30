@@ -9,3 +9,5 @@ test('command "import devto" is correctly loaded', function () {
     $app = getLibrarianApp();
     $app->runCommand(['librarian', 'import', 'dev']);
 })->expectOutputRegex("/Starting import.../");
+
+

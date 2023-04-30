@@ -25,7 +25,7 @@
 */
 
 use Minicli\App;
-use Provider\DevtoServiceProvider;
+use Librarian\Provider\DevtoServiceProvider;
 
 expect()->extend('toBeOne', function () {
     return $this->toBe(1);

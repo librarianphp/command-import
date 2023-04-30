@@ -3,7 +3,7 @@
 namespace librarianphp\Import;
 
 use Librarian\Exception\ApiException;
-use Provider\DevtoServiceProvider;
+use Librarian\Provider\DevtoServiceProvider;
 use Minicli\Command\CommandController;
 
 class DevController extends CommandController

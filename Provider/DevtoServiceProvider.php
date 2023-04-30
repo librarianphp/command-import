@@ -1,6 +1,6 @@
 <?php
 
-namespace Provider;
+namespace Librarian\Provider;
 
 use Librarian\Content;
 use Librarian\Exception\ApiException;
