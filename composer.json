@@ -12,9 +12,9 @@
         }
     },
     "require": {
-        "minicli/minicli": "^3.2.1",
+        "minicli/minicli": "^4.0",
         "minicli/curly": "^0.2.2",
-        "librarianphp/librarian-core": "^3.1"
+        "librarianphp/librarian-core": "^4.0"
     },
     "require-dev": {
         "pestphp/pest": "^2.5",
