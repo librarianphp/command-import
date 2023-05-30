@@ -8,7 +8,7 @@ class DefaultController extends CommandController
 {
     public function handle(): void
     {
-        $this->getPrinter()->info("Import posts from DEV.", true);
-        $this->getPrinter()->info("./librarian import devto");
+        $this->info("Import posts from DEV.", true);
+        $this->info("./librarian import devto");
     }
 }

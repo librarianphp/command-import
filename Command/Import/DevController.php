@@ -16,14 +16,14 @@ class DevController extends CommandController
 
         if ($devto === null) {
             if ($app_debug) {
-                $this->getPrinter()->error('ERROR: dev.to service not found. Perhaps you forgot to register it?');
+                $this->error('ERROR: dev.to service not found. Perhaps you forgot to register it?');
             }
             exit;
         }
 
         if (!$this->getApp()->config->devto_username) {
             if ($app_debug) {
-                $this->getPrinter()->error(
+                $this->error(
                     "ERROR: dev.to username not set.\n" .
                 "You must define a devto_username in your config file\n" .
                 "if you want to import posts from that platform."
@@ -32,14 +32,14 @@ class DevController extends CommandController
             exit;
         }
 
-        $this->getPrinter()->info("Starting import... this might take a few minutes.");
+        $this->info("Starting import... this might take a few minutes.");
 
         try {
             $devto->fetchAll();
         } catch (ApiException $e) {
-            $this->getPrinter()->error($e->getMessage());
+            $this->error($e->getMessage());
         }
 
-        $this->getPrinter()->success("Import Finished.");
+        $this->success("Import Finished.");
     }
 }
